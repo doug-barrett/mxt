@@ -1,0 +1,64 @@
+steps:
+  V_NODE-18619:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC_REPORTING
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 495016
+              stepCounter: "18619"
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: VALUE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 495014
+                    stepCounter: "18618"
+                transform: ""
+          - columnReference:
+              columnCounter: 495017
+              stepCounter: "18619"
+            dataType: STRING
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: METADATA$FILENAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 495015
+                    stepCounter: "18618"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: EXT_METADATA
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'EXT_METADATA') }} "EXT_METADATA"
+            name: V_NODE
+            noLinkRefs: []
+      name: V_NODE
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "18619"

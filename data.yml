@@ -1,4 +1,4 @@
-defaultStorageMapping: null
+defaultStorageMapping: DATASTORE
 jobs:
   Job-26:
     excludeSelector: ""
@@ -44,39 +44,192 @@ jobs:
     subgraphs: []
 locations:
   DATASTORE:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: ARCHIVE
+      "26":
+        database: DW_DB_DEVC
+        schema: DATASTORE
+      "27":
+        database: DW_DB_QAC
+        schema: DATASTORE
   DATASTORE_VIEW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: DATASTORE_VIEW
+      "26":
+        database: DW_DB_DEVC
+        schema: DATASTORE_VIEW
+      "27":
+        database: DW_DB_QAC
+        schema: DATASTORE_VIEW
   EDW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: ARCHIVE
+      "26":
+        database: DW_DB_DEVC
+        schema: EDW
+      "27":
+        database: DW_DB_QAC
+        schema: EDW
   EDW_REPORTING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: ARCHIVE
+      "26":
+        database: DW_DB_DEVC
+        schema: EDW_REPORTING
+      "27":
+        database: DW_DB_QAC
+        schema: EDW_REPORTING
   LOAD:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_DEVC
+        schema: LOAD
+      "26":
+        database: DW_DB_DEVC
+        schema: LOAD
+      "27":
+        database: DW_DB_QAC
+        schema: LOAD
   ODS:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: ODS
+      "26":
+        database: DW_DB_DEVC
+        schema: ODS
+      "27":
+        database: DW_DB_QAC
+        schema: ODS
   RAW_AS01_CLNPDTA:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_CLNPDTA
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_CLNPDTA
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_CLNPDTA
   RAW_AS01_IEAPDTA:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_IEAPDTA
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_IEAPDTA
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_AS01_IEAPDTA
   RAW_GWC_BC_PROD_VF:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_BC_PROD_VF
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_BC_PROD_VF
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_BC_PROD_VF
   RAW_GWC_CC_PROD_VF:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_CC_PROD_VF
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_CC_PROD_VF
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_CC_PROD_VF
   RAW_GWC_PC_PROD_VF:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_PC_PROD_VF
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_PC_PROD_VF
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_PC_PROD_VF
   RAW_GW_BC_PROD:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GW_BC_PROD
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GW_BC_PROD
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GW_BC_PROD
   RAW_GW_CC_PROD:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GW_CC_PROD
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GW_CC_PROD
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GW_CC_PROD
   RAW_GW_PC_PROD:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RAW_DB_PROD
+        schema: RAW_GW_PC_PROD
+      "26":
+        database: RAW_DB_PROD
+        schema: RAW_GWC_PC_PROD
+      "27":
+        database: RAW_DB_PROD
+        schema: RAW_GW_PC_PROD
   SBL:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: ARCHIVE
+      "26":
+        database: DW_DB_DEVC
+        schema: SBL
+      "27":
+        database: DW_DB_QAC
+        schema: SBL
   SRC_REPORTING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: DATASTORE_VIEW
+      "26":
+        database: DW_DB_DEVC
+        schema: SRC_REPORTING
+      "27":
+        database: DW_DB_QAC
+        schema: SRC_REPORTING
   STAGE:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DW_DB_ALT_DEVC
+        schema: STAGE
+      "26":
+        database: DW_DB_DEVC
+        schema: STAGE
+      "27":
+        database: DW_DB_QAC
+        schema: STAGE
 macros:
   Macro-1:
     id: "1"
